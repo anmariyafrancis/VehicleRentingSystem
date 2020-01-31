@@ -104,4 +104,17 @@ public abstract class Person
     public void setPassWord(String passWord) {
         this.passWord = passWord;
     }
+
+    public void  printData()
+    {
+        System.out.println("Id: " + id);
+        System.out.println("First Name: " + firstName);
+        System.out.println("Last Name: " + lastName);
+        System.out.println("Gender: " + gender);
+        System.out.println("Birth Date: " + birthDate);
+        System.out.println("Mobile Number: " + mobileNumber );
+        System.out.println("Email ID: " + emailId);
+        System.out.println("Username: " + userName);
+        System.out.println("Password: " + passWord);
+    }
 }
