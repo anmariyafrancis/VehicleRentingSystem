@@ -1,6 +1,6 @@
 package com.lambton;
 
-public interface iDisplay {
+public interface IDisplay {
     public static void main(String[] args) {
         
     }
