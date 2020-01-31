@@ -117,4 +117,11 @@ public abstract class Person
         System.out.println("Username: " + userName);
         System.out.println("Password: " + passWord);
     }
+
+    private int getAge()
+    {
+        LocalDate today = LocalDate.now();
+        int age = today.getYear()-birthDate.getYear();
+        return age;
+    }
 }
