@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Car extends Vehicles
 {
-    ArrayList<String> carType=new ArrayList<String>();
-    ArrayList<String> carColor=new ArrayList<String>();
+    private ArrayList<String> carType=new ArrayList<String>();
+    private ArrayList<String> carColor=new ArrayList<String>();
 
     public Car(int vechicleId, String vehicleDetails, String manufacturerName, String insuranceProviderName, int noOfSeats, FuelTypes fuelTypes)
     {
