@@ -16,4 +16,36 @@ public class Owner extends Person
         this.website = website;
         this.vehicleListOwned = vehicleListOwned;
     }
+
+    public String getCompanyTitle() {
+        return companyTitle;
+    }
+
+    public void setCompanyTitle(String companyTitle) {
+        this.companyTitle = companyTitle;
+    }
+
+    public int getBusinessLandLineNo() {
+        return businessLandLineNo;
+    }
+
+    public void setBusinessLandLineNo(int businessLandLineNo) {
+        this.businessLandLineNo = businessLandLineNo;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getVehicleListOwned() {
+        return vehicleListOwned;
+    }
+
+    public void setVehicleListOwned(String vehicleListOwned) {
+        this.vehicleListOwned = vehicleListOwned;
+    }
 }
