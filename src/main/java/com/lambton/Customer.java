@@ -14,4 +14,28 @@ public class Customer extends Person
         this.city = city;
         this.vehicleRent = vehicleRent;
     }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getVehicleRent() {
+        return vehicleRent;
+    }
+
+    public void setVehicleRent(String vehicleRent) {
+        this.vehicleRent = vehicleRent;
+    }
 }
