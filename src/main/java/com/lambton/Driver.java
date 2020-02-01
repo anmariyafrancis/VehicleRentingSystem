@@ -15,4 +15,27 @@ public class Driver extends Person
         this.salary = salary;
     }
 
+    public String getDriverLicenceNo() {
+        return driverLicenceNo;
+    }
+
+    public void setDriverLicenceNo(String driverLicenceNo) {
+        this.driverLicenceNo = driverLicenceNo;
+    }
+
+    public boolean isDrivingHistoryCleared() {
+        return drivingHistoryCleared;
+    }
+
+    public void setDrivingHistoryCleared(boolean drivingHistoryCleared) {
+        this.drivingHistoryCleared = drivingHistoryCleared;
+    }
+
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
 }
