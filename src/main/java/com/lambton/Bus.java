@@ -7,6 +7,11 @@ enum BusAccessibility
     Yes,
     No
 }
+enum WifiAccessibility
+{
+    Yes,
+    No
+}
 
 public class Bus extends Vehicles implements IDisplay
 {
