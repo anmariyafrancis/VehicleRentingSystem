@@ -13,7 +13,7 @@ enum WifiAccessibility
     No
 }
 
-public class Bus extends Vehicles implements IDisplay
+public class Bus extends Vehicles
 {
     private ArrayList<String> busType=new ArrayList<String>();
     private BusAccessibility busAccess;

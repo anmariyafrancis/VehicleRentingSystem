@@ -9,7 +9,7 @@ enum FuelTypes
     Electric
 }
 
-public abstract class Vehicles
+public abstract class Vehicles implements IDisplay
 {
     private int vechicleId;
     private String vehicleDetails;
@@ -28,65 +28,78 @@ public abstract class Vehicles
         this.manufacturerName = manufacturerName;
         this.insuranceProviderName = insuranceProviderName;
         this.noOfSeats = noOfSeats;
-        this.fuelTypes = fuelTypes;
+        this.fuelType = fuelType;
     }
 
     public int getVechicleId() {
         return vechicleId;
     }
 
-    public void setVechicleId(int vechicleId)
-    {
+    public void setVechicleId(int vechicleId) {
         this.vechicleId = vechicleId;
     }
 
-    public String getVehicleDetails()
-    {
+    public String getVehicleDetails() {
         return vehicleDetails;
     }
 
-    public void setVehicleDetails(String vehicleDetails)
-    {
+    public void setVehicleDetails(String vehicleDetails) {
         this.vehicleDetails = vehicleDetails;
     }
 
-    public String getManufacturerName()
-    {
+    public String getManufacturerName() {
         return manufacturerName;
     }
 
-    public void setManufacturerName(String manufacturerName)
-    {
+    public void setManufacturerName(String manufacturerName) {
         this.manufacturerName = manufacturerName;
     }
 
-    public String getInsuranceProviderName()
-    {
+    public String getVehicleDriverName() {
+        return vehicleDriverName;
+    }
+
+    public void setVehicleDriverName(String vehicleDriverName) {
+        this.vehicleDriverName = vehicleDriverName;
+    }
+
+    public String getInsuranceProviderName() {
         return insuranceProviderName;
     }
 
-    public void setInsuranceProviderName(String insuranceProviderName)
-    {
+    public void setInsuranceProviderName(String insuranceProviderName) {
         this.insuranceProviderName = insuranceProviderName;
     }
 
-    public int getNoOfSeats()
-    {
+    public int getNoOfSeats() {
         return noOfSeats;
     }
 
-    public void setNoOfSeats(int noOfSeats)
-    {
+    public void setNoOfSeats(int noOfSeats) {
         this.noOfSeats = noOfSeats;
     }
 
-    public FuelTypes getFuelTypes()
-    {
-        return fuelTypes;
+    public FuelTypes getFuelType() {
+        return fuelType;
     }
 
-    public void setFuelTypes(FuelTypes fuelTypes)
-    {
-        this.fuelTypes = fuelTypes;
+    public void setFuelType(FuelTypes fuelType) {
+        this.fuelType = fuelType;
+    }
+
+    public HashMap<String, Float> getBaseRatePerDay() {
+        return baseRatePerDay;
+    }
+
+    public void setBaseRatePerDay(HashMap<String, Float> baseRatePerDay) {
+        this.baseRatePerDay = baseRatePerDay;
+    }
+
+    public HashMap<String, Float> getRatePerKilometer() {
+        return ratePerKilometer;
+    }
+
+    public void setRatePerKilometer(HashMap<String, Float> ratePerKilometer) {
+        this.ratePerKilometer = ratePerKilometer;
     }
 }

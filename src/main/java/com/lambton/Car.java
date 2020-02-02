@@ -2,7 +2,7 @@ package com.lambton;
 
 import java.util.ArrayList;
 
-public class Car extends Vehicles implements IDisplay
+public class Car extends Vehicles
 {
     private ArrayList<String> carType=new ArrayList<String>();
     private ArrayList<String> carColor=new ArrayList<String>();

@@ -9,7 +9,7 @@ enum Gender
     OTHERS
 }
 
-public abstract class Person
+public abstract class Person implements IDisplay
 {
     private int id;
     private String firstName;
