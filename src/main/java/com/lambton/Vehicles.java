@@ -1,5 +1,7 @@
 package com.lambton;
 
+import java.util.HashMap;
+
 enum FuelTypes
 {
     Petrol,
@@ -12,9 +14,12 @@ public abstract class Vehicles
     private int vechicleId;
     private String vehicleDetails;
     private String manufacturerName;
+    private String vehicleDriverName;
     private String insuranceProviderName;
     private int noOfSeats;
-    private FuelTypes fuelTypes;
+    private FuelTypes fuelType;
+    private HashMap<String,Float> baseRatePerDay=new HashMap<String, Float>();
+    private HashMap<String,Float> ratePerKilometer=new HashMap<String, Float>();
 
     public Vehicles(int vechicleId, String vehicleDetails, String manufacturerName, String insuranceProviderName, int noOfSeats, FuelTypes fuelTypes)
     {
