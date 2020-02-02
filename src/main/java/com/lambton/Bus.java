@@ -1,7 +1,17 @@
 package com.lambton;
 
-public class Bus extends Vehicles
+import java.util.ArrayList;
+
+enum BusAccessibility
 {
+    Yes,
+    No
+}
+
+public class Bus extends Vehicles implements IDisplay
+{
+    private ArrayList<String> busType=new ArrayList<String>();
+
     public Bus(int vechicleId, String vehicleDetails, String manufacturerName, String insuranceProviderName, int noOfSeats, FuelTypes fuelTypes)
     {
         super(vechicleId, vehicleDetails, manufacturerName, insuranceProviderName, noOfSeats, fuelTypes);
