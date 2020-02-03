@@ -9,7 +9,6 @@ public class VehicleRent implements IDisplay
     private float rentInNoOfDays;
     private double totalKilometerDrived;
     private float totalBillToPay;
-   // private String vehicleType;
 
     public VehicleRent(LocalDate rentStartDate, LocalDate rentEndDate, float rentInNoOfDays, double totalKilometerDrived, float totalBillToPay)
     {
