@@ -16,17 +16,20 @@ public abstract class Person implements IDisplay
     private String lastName;
     private Gender gender;
     private LocalDate birthDate;
+    private int age;
     private int mobileNumber;
     private String emailId;
     private String userName;
     private String passWord;
 
-    public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int mobileNumber, String emailId, String userName, String passWord) {
+    public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int age, int mobileNumber, String emailId, String userName, String passWord)
+    {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
         this.birthDate = birthDate;
+        this.age = age;
         this.mobileNumber = mobileNumber;
         this.emailId = emailId;
         this.userName = userName;
@@ -105,23 +108,25 @@ public abstract class Person implements IDisplay
         this.passWord = passWord;
     }
 
-    public void  printData()
+    @Override
+    public void  print()
     {
-        System.out.println("Id: " + id);
-        System.out.println("First Name: " + firstName);
-        System.out.println("Last Name: " + lastName);
-        System.out.println("Gender: " + gender);
-        System.out.println("Birth Date: " + birthDate);
-        System.out.println("Mobile Number: " + mobileNumber );
-        System.out.println("Email ID: " + emailId);
-        System.out.println("Username: " + userName);
-        System.out.println("Password: " + passWord);
+        System.out.println("Id: " + getId());
+        System.out.println("First Name: " + getFirstName());
+        System.out.println("Last Name: " + getLastName());
+        System.out.println("Gender: " + getGender());
+        System.out.println("Birth Date: " + getBirthDate());
+        System.out.println("Age: " + getAge());
+        System.out.println("Mobile Number: " + getMobileNumber() );
+        System.out.println("Email ID: " + getEmailId());
+        System.out.println("Username: " + getUserName());
+        System.out.println("Password: " + getPassWord());
     }
 
     private int getAge()
     {
         LocalDate today = LocalDate.now();
-        int age = today.getYear()-birthDate.getYear();
+        age = today.getYear()-birthDate.getYear();
         return age;
     }
 }
