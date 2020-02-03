@@ -5,21 +5,13 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Group8Main
+public class Group8Main<b1>
 {
     public static void main(String[] args)
     {
         List<Vehicles> vehicleList=new ArrayList<Vehicles>();
         Group8Main v1=new Group8Main();
         v1.insertOwnerDetails();
-        v1.insertBusDetails();
-        v1.insertCarDetails();
-        v1.insertMotorCycleDetails();
-        List<Vehicles> owner1VehicleList=new ArrayList<Vehicles>();
-        List<Vehicles> owner2VehicleList=new ArrayList<Vehicles>();
-        List<Vehicles> owner3VehicleList=new ArrayList<Vehicles>();
-        List<Vehicles> owner4VehicleList=new ArrayList<Vehicles>();
-        List<Vehicles> owner5VehicleList=new ArrayList<Vehicles>();
     }
     public void insertOwnerDetails()
     {
@@ -43,10 +35,9 @@ public class Group8Main
                 "kspensly3@oaic.gov.au", "kspensly3", "5FWUMy", "Twitterbeat", "(912) 5937336", "macromedia.com", null);
 
         Owner owner5 = new Owner(5,"Eveline","Lumox",Gender.Female,owner5BirthDate,"(721) 7650492","elumox4@weather.com","elumox4","fwNXQKCkTVW","Leenti","(654) 4720600","europa.eu",null);
-    }
 
-    public void insertBusDetails()
-    {
+        //inserting bus details//
+
         Bus b1= new Bus("1N6AD0CU5BC296395", "Customer-focused bifurcated groupware", "Ford", "False", "Pepillo Kitman", "Yes",null
             , 9, FuelTypes.Petrol, 250f, 7f, "ScoolBus",BusAccessibility.Yes,WifiAccessibility.No);
 
@@ -56,22 +47,41 @@ public class Group8Main
         );
         Bus b4= new Bus("1G4HC5EM9BU946298",	"Devolved directional firmware","Buick",	"True",null,"Yes","Jevco",	45, FuelTypes.Petrol,250f, 7f,"Mini Bus",	BusAccessibility.Yes,WifiAccessibility.Yes);
         Bus b5= new Bus("WBAAV33461F067610","Realigned object-oriented interface","Nissan","FALSE","Krystle Wilbore","Yes","Aviva",32,FuelTypes.Petrol ,250f, 7f,"Double-decker",BusAccessibility.Yes,WifiAccessibility.No);
-    }
 
-    public void insertCarDetails()
-    {
+        //inserting car details//
+
         Car c1=new Car("WBA3A5C55CF202202","Visionary optimal neural-net","Scion","False","Pepillo  Kitman","FALSE",	null,6,FuelTypes.Petrol,100f,5f, "tC","Yellow");
         Car c2=new Car("5N1CR2MNXEC181212","Networked background initiative","Ford","TRUE",null,"TRUE","Aviva",8,FuelTypes.Diesel, 100f,5f, "Econoline E150","Violet" );
         Car c3=new Car("WAUUL98EX8A747315",	"Reverse-engineered motivating moderator","Buick","FALSE","Robb Seton","TRUE","Intact Insurance",6,FuelTypes.Diesel,100f,5f,"Park Avenue","Pink" );
         Car c4=new Car("ZHWGU5BZ0CL457896","Multi-lateral content-based customer loyalty","Ford","TRUE",	null,"False",null,8,FuelTypes.Petrol,100f,5f,"Aerostar","Mauv" );
         Car c5=new Car("WAU4FAFL0AA424617","Persistent fault-tolerant focus group","Suzuki","TRUE",null,"FALSE",null,7,FuelTypes.Petrol,100f, 5f,"Esteem","Crimson" );
-    }
-    public void insertMotorCycleDetails()
-    {
+
+        //inserting  motorcycle details//
+
         MotorCycle m1=new MotorCycle("WBA3B9C51DJ591682","Right-sized 24/7 projection","Harley Davidson","True","Pepillo  Kitman","Yes",null,2,FuelTypes.Petrol,50f,1f,71,	41);
         MotorCycle m2=new MotorCycle("WBAVB13506K975623",	"Multi-lateral needs-based superstructure",	"Ducati","TRUE",null,"TRUE","Aviva",1,FuelTypes.Diesel, 50f	,1f,	59,	36);
         MotorCycle m3=new MotorCycle("JH4DB76611S323929",	"Multi-tiered context-sensitive projection","BMW","FALSE","Krystle Wilbore","FALSE",null,2,FuelTypes.Diesel,50f,1f,165,	23);
         MotorCycle m4=new MotorCycle("5N1AR2MM1FC633287","Secured local encryption","Aprillia","TRUE",null,"TRUE","Intact Insurance",1,FuelTypes.Petrol, 50f,1f, 157,32);
         MotorCycle m5=new MotorCycle("3C6LD4AT1CG631333","Seamless national benchmark","Honda","FALSE","Pepillo  Kitman","TRUE","Aviva",1,FuelTypes.Petrol ,50f,1f, 183,51);
-    }
+
+        List<Vehicles> owner1VehicleList=new ArrayList<Vehicles>();
+        owner1VehicleList.add(b1);
+        owner1VehicleList.add(c2);
+        owner1VehicleList.add(m3);
+
+        List<Vehicles> owner2VehicleList=new ArrayList<Vehicles>();
+        owner1VehicleList.add(b2);
+        owner1VehicleList.add(c3);
+        owner1VehicleList.add(m4);
+
+        List<Vehicles> owner3VehicleList=new ArrayList<Vehicles>();
+        owner1VehicleList.add(b3);
+        owner1VehicleList.add(c4);
+        owner1VehicleList.add(m5);
+
+        List<Vehicles> owner4VehicleList=new ArrayList<Vehicles>();
+        owner1VehicleList.add(b3);
+        owner1VehicleList.add(c4);
+        owner1VehicleList.add(m5);
+        List<Vehicles> owner5VehicleList=new ArrayList<Vehicles>();
 }
