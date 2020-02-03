@@ -60,6 +60,10 @@ public class Group8Main
     }
     public void insertMotorCycleDetails()
     {
-
+        MotorCycle m1=new MotorCycle("WBA3B9C51DJ591682","Right-sized 24/7 projection","Harley Davidson","True","Pepillo  Kitman","Yes",null,2,FuelTypes.Petrol,50f,1f,71,	41);
+        MotorCycle m1=new MotorCycle();
+        MotorCycle m1=new MotorCycle();
+        MotorCycle m1=new MotorCycle();
+        MotorCycle m1=new MotorCycle();
     }
 }
