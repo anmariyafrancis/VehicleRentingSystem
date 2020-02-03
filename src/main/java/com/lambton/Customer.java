@@ -8,8 +8,9 @@ public class Customer extends Person
     private String city;
     private String vehicleRent;
 
-    public Customer(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int mobileNumber, String emailId, String userName, String passWord, String address, String city, String vehicleRent) {
-        super(id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, passWord);
+    public Customer(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int age, int mobileNumber, String emailId, String userName, String passWord, String address, String city, String vehicleRent)
+    {
+        super(id, firstName, lastName, gender, birthDate, age, mobileNumber, emailId, userName, passWord);
         this.address = address;
         this.city = city;
         this.vehicleRent = vehicleRent;
@@ -37,5 +38,13 @@ public class Customer extends Person
 
     public void setVehicleRent(String vehicleRent) {
         this.vehicleRent = vehicleRent;
+    }
+
+    @Override
+    public void print()
+    {
+        System.out.println("Customer Address: " + getAddress());
+        System.out.println("Customer City: " + getCity());
+        System.out.println("Vehicle Rent: " + getVehicleRent());
     }
 }

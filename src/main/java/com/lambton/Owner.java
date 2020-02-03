@@ -1,20 +1,23 @@
 package com.lambton;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Owner extends Person
 {
     private String companyTitle;
-    private int businessLandLineNo;
+    private int businessLandLineNumber;
     private String website;
-    private String vehicleListOwned;
+    private List<String> list=new ArrayList<String>();
 
-    public Owner(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int mobileNumber, String emailId, String userName, String passWord, String companyTitle, int businessLandLineNo, String website, String vehicleListOwned) {
-        super(id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, passWord);
+    public Owner(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int age, int mobileNumber, String emailId, String userName, String passWord, String companyTitle, int businessLandLineNumber, String website, String vehicleListOwned)
+    {
+        super(id, firstName, lastName, gender, birthDate, age, mobileNumber, emailId, userName, passWord);
         this.companyTitle = companyTitle;
-        this.businessLandLineNo = businessLandLineNo;
+        this.businessLandLineNumber = businessLandLineNumber;
         this.website = website;
-        this.vehicleListOwned = vehicleListOwned;
+        //this.vehicleListOwned = vehicleListOwned;
     }
 
     public String getCompanyTitle() {
@@ -25,12 +28,12 @@ public class Owner extends Person
         this.companyTitle = companyTitle;
     }
 
-    public int getBusinessLandLineNo() {
-        return businessLandLineNo;
+    public int getBusinessLandLineNumber() {
+        return businessLandLineNumber;
     }
 
-    public void setBusinessLandLineNo(int businessLandLineNo) {
-        this.businessLandLineNo = businessLandLineNo;
+    public void setBusinessLandLineNumber(int businessLandLineNumber) {
+        this.businessLandLineNumber = businessLandLineNumber;
     }
 
     public String getWebsite() {
@@ -41,11 +44,20 @@ public class Owner extends Person
         this.website = website;
     }
 
-    public String getVehicleListOwned() {
-        return vehicleListOwned;
+    public List<String> getList() {
+        return list;
     }
 
-    public void setVehicleListOwned(String vehicleListOwned) {
-        this.vehicleListOwned = vehicleListOwned;
+    public void setList(List<String> list) {
+        this.list = list;
+    }
+
+    @Override
+    public void print()
+    {
+        System.out.println("Company title: " + getCompanyTitle());
+        System.out.println("Company Contact Number: " + getBusinessLandLineNumber());
+        System.out.println("Company Website: " + getWebsite());
+        //System.out.println("Vehicle List Owned: " + getVehicleListOwned());
     }
 }

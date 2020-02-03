@@ -8,34 +8,41 @@ public class Driver extends Person
     private boolean drivingHistoryCleared;
     private float salary;
 
-    public Driver(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int mobileNumber, String emailId, String userName, String passWord, String driverLicenceNo, boolean drivingHistoryCleared, float salary) {
-        super(id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, passWord);
+    public Driver(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int age, int mobileNumber, String emailId, String userName, String passWord, String driverLicenceNo, boolean drivingHistoryCleared, float salary)
+    {
+        super(id, firstName, lastName, gender, birthDate, age, mobileNumber, emailId, userName, passWord);
         this.driverLicenceNo = driverLicenceNo;
         this.drivingHistoryCleared = drivingHistoryCleared;
         this.salary = salary;
     }
 
-    public String getDriverLicenceNo() {
+    public String getDriverLicenceNo()
+    {
         return driverLicenceNo;
     }
 
-    public void setDriverLicenceNo(String driverLicenceNo) {
+    public void setDriverLicenceNo(String driverLicenceNo)
+    {
         this.driverLicenceNo = driverLicenceNo;
     }
 
-    public boolean isDrivingHistoryCleared() {
+    public boolean isDrivingHistoryCleared()
+    {
         return drivingHistoryCleared;
     }
 
-    public void setDrivingHistoryCleared(boolean drivingHistoryCleared) {
+    public void setDrivingHistoryCleared(boolean drivingHistoryCleared)
+    {
         this.drivingHistoryCleared = drivingHistoryCleared;
     }
 
-    public float getSalary() {
+    public float getSalary()
+    {
         return salary;
     }
 
-    public void setSalary(float salary) {
+    public void setSalary(float salary)
+    {
         this.salary = salary;
     }
 }
