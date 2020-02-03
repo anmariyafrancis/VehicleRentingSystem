@@ -120,4 +120,5 @@ public abstract class Vehicles implements IDisplay
     public void setRatePerKilometer(HashMap<String, Float> ratePerKilometer) {
         this.ratePerKilometer = ratePerKilometer;
     }
+
 }

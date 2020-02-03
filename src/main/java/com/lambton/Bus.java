@@ -51,19 +51,10 @@ public class Bus extends Vehicles
         this.isWifiAccess = isWifiAccess;
     }
 
-    public void display()
+    @Override
+    public void print()
     {
-        System.out.println("Bus Identification Number : " + getVechicleId());
-        System.out.println("Bus Details : "+getVehicleDetails());
-        System.out.println("Bus Manufacturer's name : "+getManufacturerName());
-        System.out.println("Bus is self driving : "+isVehicleIsSelfDrive());
-        System.out.println("Bus Driver Name : "+getVehicleDriverName());
-        System.out.println("Is bus Insured? : "+isVehicleIsInsured());
-        System.out.println("Bus Insurance Provider's Name : "+getInsuranceProviderName());
-        System.out.println("Bus no. of seats : "+getNoOfSeats());
-        System.out.println("Bus Fuel Type : "+getFuelType());
-        System.out.println("Bus Base Rate Per Day : "+getBaseRatePerDay());
-        System.out.println("Bus Rate per Hour : "+getRatePerKilometer());
+
         System.out.println("Bus Type : "+getBusType());
         System.out.println("Is wifi Available ? : "+getIsWifiAccess());
         System.out.println("Is bus access now? : "+getIsBusAccess());

@@ -24,7 +24,8 @@ public class MotorCycle extends Vehicles
         this.milage = milage;
     }
 
-    public void display()
+    @Override
+    public void print()
     {
         System.out.println("MotorCycle Identification Number : " + getVechicleId());
         System.out.println("MotorCycle Details : "+getVehicleDetails());

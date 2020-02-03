@@ -32,7 +32,8 @@ public class Car extends Vehicles
         this.carColor = carColor;
     }
 
-    public void display()
+    @Override
+    public void print()
     {
         System.out.println("Car Identification Number : " + getVechicleId());
         System.out.println("Car Details : "+getVehicleDetails());
