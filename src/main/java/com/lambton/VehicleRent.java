@@ -62,6 +62,11 @@ public class VehicleRent implements IDisplay
     @Override
     public void print()
     {
-
+        System.out.println("Vehicle Rent Start Date : " + getRentStartDate());
+        System.out.println("Vehicle Rent End Date : " + getRentEndDate());
+        System.out.println("Rent In No Of Days" + getRentInNoOfDays());
+        System.out.println("Total Kilometer Drived : " + getTotalKilometerDrived());
+        System.out.println("Vehicle Rent End Date : " + getRentEndDate());
+        System.out.println("Total Bill To Pay" + getTotalBillToPay());
     }
 }
