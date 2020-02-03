@@ -70,21 +70,21 @@ public class Group8Main<b1>
         owner1VehicleList.add(m3);
 
         List<Vehicles> owner2VehicleList=new ArrayList<Vehicles>();
-        owner1VehicleList.add(b2);
-        owner1VehicleList.add(c3);
-        owner1VehicleList.add(m4);
+        owner2VehicleList.add(b2);
+        owner2VehicleList.add(c3);
+        owner2VehicleList.add(m4);
 
         List<Vehicles> owner3VehicleList=new ArrayList<Vehicles>();
-        owner1VehicleList.add(b3);
-        owner1VehicleList.add(c4);
-        owner1VehicleList.add(m5);
+        owner3VehicleList.add(b3);
+        owner3VehicleList.add(c4);
+        owner3VehicleList.add(m5);
 
         List<Vehicles> owner4VehicleList=new ArrayList<Vehicles>();
-        owner1VehicleList.add(b3);
-        owner1VehicleList.add(c4);
-        owner1VehicleList.add(m5);
+        owner4VehicleList.add(b3);
+        owner4VehicleList.add(c4);
+        owner4VehicleList.add(m5);
 
         List<Vehicles> owner5VehicleList=new ArrayList<Vehicles>();
-        owner1VehicleList.add(b3);
+        owner5VehicleList.add(b3);
 
 }
