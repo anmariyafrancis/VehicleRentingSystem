@@ -54,11 +54,9 @@ public class Group8Main
     {
         Car c1=new Car("WBA3A5C55CF202202","Visionary optimal neural-net","Scion","False","Pepillo  Kitman","FALSE",	null,6,FuelTypes.Petrol,100f,5f, "tC","Yellow");
         Car c2=new Car("5N1CR2MNXEC181212","Networked background initiative","Ford","TRUE",null,"TRUE","Aviva",8,FuelTypes.Diesel, 100f,5f, "Econoline E150","Violet" );
-        Car c3=new Car("WAUUL98EX8A747315",	"Reverse-engineered motivating moderator","Buick","FALSE","Robb Seton","TRUE","Intact Insurance",6,FuelTypes.Diesel,100,5,"Park Avenue","Pink"
-        );
-        Car c4=new Car("ZHWGU5BZ0CL457896","Multi-lateral content-based customer loyalty","Ford","TRUE",	null,"False",null,8,FuelTypes.Petrol,100,5,"Aerostar","Mauv" );
-        Car c5=new Car(WAU4FAFL0AA424617	Persistent fault-tolerant focus group	Suzuki	TRUE		FALSE		7	Petrol	$ 100	$ 5	Esteem	Crimson
-        );
+        Car c3=new Car("WAUUL98EX8A747315",	"Reverse-engineered motivating moderator","Buick","FALSE","Robb Seton","TRUE","Intact Insurance",6,FuelTypes.Diesel,100f,5f,"Park Avenue","Pink" );
+        Car c4=new Car("ZHWGU5BZ0CL457896","Multi-lateral content-based customer loyalty","Ford","TRUE",	null,"False",null,8,FuelTypes.Petrol,100f,5f,"Aerostar","Mauv" );
+        Car c5=new Car("WAU4FAFL0AA424617","Persistent fault-tolerant focus group","Suzuki","TRUE",null,"FALSE",null,7,FuelTypes.Petrol,100f, 5f,"Esteem","Crimson" );
 
     }
 }
