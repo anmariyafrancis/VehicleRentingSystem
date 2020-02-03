@@ -43,11 +43,11 @@ public class Group8Main
 
         Bus b2= new Bus("1GD01XEG5FZ726187", "Focused actuating help-desk", "Benz", "True", "Pepillo Kitman", "Yes",
                 null, 26,FuelTypes.Diesel, 250f, 7f, "Coach",BusAccessibility.Yes,WifiAccessibility.Yes);
-        Bus b3= new Bus("3N1CN7AP4DL356756","	Enhanced tertiary Graphical User Interface","	Ford",	"TRUE",null,"TRUE","Intact Insurance",	30,FuelTypes.Diesel,250,	7f,	"Double Decker",BusAccessibility.No,WifiAccessibility.Yes
+        Bus b3= new Bus("3N1CN7AP4DL356756","	Enhanced tertiary Graphical User Interface","	Ford",	"TRUE",null,"TRUE","Intact Insurance",	30,FuelTypes.Diesel,250f,	7f,	"Double Decker",BusAccessibility.No,WifiAccessibility.Yes
         );
-        Bus b4= new Bus("1G4HC5EM9BU946298",	"Devolved directional firmware","Buick",	"True",null,"Yes","Jevco",	45, FuelTypes.Petrol,250, 7,"Mini Bus",	BusAccessibility.Yes,WifiAccessibility.Yes);
+        Bus b4= new Bus("1G4HC5EM9BU946298",	"Devolved directional firmware","Buick",	"True",null,"Yes","Jevco",	45, FuelTypes.Petrol,250f, 7f,"Mini Bus",	BusAccessibility.Yes,WifiAccessibility.Yes);
         );
-        Bus b1= new Bus
+        Bus b5= new Bus("WBAAV33461F067610","Realigned object-oriented interface","Nissan","FALSE","Krystle Wilbore","Yes","Aviva",32,FuelTypes.Petrol ,250f, 7f,"Double-decker",BusAccessibility.Yes,WifiAccessibility.No);
 
     }
 }
