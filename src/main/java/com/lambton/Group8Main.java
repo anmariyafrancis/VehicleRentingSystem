@@ -80,11 +80,14 @@ public class Group8Main<b1>
         owner3VehicleList.add(m5);
 
         List<Vehicles> owner4VehicleList=new ArrayList<Vehicles>();
-        owner4VehicleList.add(b3);
-        owner4VehicleList.add(c4);
-        owner4VehicleList.add(m5);
+        owner4VehicleList.add(b4);
+        owner4VehicleList.add(c5);
+        owner4VehicleList.add(m1);
 
         List<Vehicles> owner5VehicleList=new ArrayList<Vehicles>();
-        owner5VehicleList.add(b3);
+        owner5VehicleList.add(b5);
+        owner5VehicleList.add(c1);
+        owner5VehicleList.add(m2);
+
 
 }
