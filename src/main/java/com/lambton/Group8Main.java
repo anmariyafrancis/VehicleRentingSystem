@@ -2,16 +2,24 @@ package com.lambton;
 
 import java.beans.FeatureDescriptor;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Group8Main
 {
     public static void main(String[] args)
     {
+        List<Vehicles> vehicleList=new ArrayList<Vehicles>();
         Group8Main v1=new Group8Main();
         v1.insertOwnerDetails();
         v1.insertBusDetails();
         v1.insertCarDetails();
         v1.insertMotorCycleDetails();
+        List<Vehicles> owner1VehicleList=new ArrayList<Vehicles>();
+        List<Vehicles> owner2VehicleList=new ArrayList<Vehicles>();
+        List<Vehicles> owner3VehicleList=new ArrayList<Vehicles>();
+        List<Vehicles> owner4VehicleList=new ArrayList<Vehicles>();
+        List<Vehicles> owner5VehicleList=new ArrayList<Vehicles>();
     }
     public void insertOwnerDetails()
     {
