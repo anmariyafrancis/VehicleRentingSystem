@@ -10,6 +10,7 @@ public class Group8Main
         Group8Main v1=new Group8Main();
         v1.insertOwnerDetails();
         v1.insertBusDetails();
+        v1.insertCarDetails();
 
     }
     public void insertOwnerDetails()
@@ -46,8 +47,16 @@ public class Group8Main
         Bus b3= new Bus("3N1CN7AP4DL356756","	Enhanced tertiary Graphical User Interface","	Ford",	"TRUE",null,"TRUE","Intact Insurance",	30,FuelTypes.Diesel,250f,	7f,	"Double Decker",BusAccessibility.No,WifiAccessibility.Yes
         );
         Bus b4= new Bus("1G4HC5EM9BU946298",	"Devolved directional firmware","Buick",	"True",null,"Yes","Jevco",	45, FuelTypes.Petrol,250f, 7f,"Mini Bus",	BusAccessibility.Yes,WifiAccessibility.Yes);
-        );
         Bus b5= new Bus("WBAAV33461F067610","Realigned object-oriented interface","Nissan","FALSE","Krystle Wilbore","Yes","Aviva",32,FuelTypes.Petrol ,250f, 7f,"Double-decker",BusAccessibility.Yes,WifiAccessibility.No);
+    }
+
+    public void insertCarDetails()
+    {
+        Car c1=new Car("WBA3A5C55CF202202","Visionary optimal neural-net","Scion","False","Pepillo  Kitman","FALSE",	null,6,FuelTypes.Petrol,100f,5f, "tC","Yellow");
+        Car c2=new Car();
+        Car c3=new Car();
+        Car c4=new Car();
+        Car c5=new Car();
 
     }
 }

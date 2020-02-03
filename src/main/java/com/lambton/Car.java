@@ -4,31 +4,29 @@ import java.util.ArrayList;
 
 public class Car extends Vehicles
 {
-    private ArrayList<String> carType=new ArrayList<String>();
-    private ArrayList<String> carColor=new ArrayList<String>();
+    private String carType;
+    private String carColor;
 
-    public Car(int vechicleId, String vehicleDetails, String manufacturerName, String insuranceProviderName, int noOfSeats, FuelTypes fuelTypes)
+    public Car(String vechicleId, String vehicleDetails, String manufacturerName, String vehicleIsSelfDrive, String vehicleDriverName, String vehicleIsInsured, String insuranceProviderName, int noOfSeats, FuelTypes fuelType, Float baseRatePerDay, Float ratePerKilometer, String carType, String CarColor)
     {
-        super(vechicleId, vehicleDetails, manufacturerName, insuranceProviderName, noOfSeats, fuelTypes);
+        super(vechicleId, vehicleDetails, manufacturerName, vehicleIsSelfDrive, vehicleDriverName, vehicleIsInsured, insuranceProviderName, noOfSeats, fuelType, baseRatePerDay, ratePerKilometer);
+        this.carType = carType;
+        this.carColor = carColor;
     }
 
-    public ArrayList<String> getCarType()
-    {
+    public String getCarType() {
         return carType;
     }
 
-    public void setCarType(ArrayList<String> carType)
-    {
+    public void setCarType(String carType) {
         this.carType = carType;
     }
 
-    public ArrayList<String> getCarColor()
-    {
+    public String getCarColor() {
         return carColor;
     }
 
-    public void setCarColor(ArrayList<String> carColor)
-    {
+    public void setCarColor(String carColor) {
         this.carColor = carColor;
     }
 
@@ -38,9 +36,9 @@ public class Car extends Vehicles
         System.out.println("Car Identification Number : " + getVechicleId());
         System.out.println("Car Details : "+getVehicleDetails());
         System.out.println("Car Manufacturer's name : "+getManufacturerName());
-        System.out.println("is car self driving ? : "+isVehicleIsSelfDrive());
+      //  System.out.println("is car self driving ? : "+isVehicleIsSelfDrive());
         System.out.println("Car Driver Name : "+getVehicleDriverName());
-        System.out.println("Is car insured ? : "+isVehicleIsInsured());
+        //System.out.println("Is car insured ? : "+isVehicleIsInsured());
         System.out.println("Car Insurance Provider's Name : "+getInsuranceProviderName());
         System.out.println("Car no. of seats : "+getNoOfSeats());
         System.out.println("Car Fuel Type : "+getFuelType());
