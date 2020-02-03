@@ -83,5 +83,7 @@ public class Group8Main<b1>
         owner1VehicleList.add(b3);
         owner1VehicleList.add(c4);
         owner1VehicleList.add(m5);
+
         List<Vehicles> owner5VehicleList=new ArrayList<Vehicles>();
+
 }
