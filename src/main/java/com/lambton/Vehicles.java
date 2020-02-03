@@ -11,15 +11,17 @@ enum FuelTypes
 
 public abstract class Vehicles implements IDisplay
 {
-    private int vechicleId;
-    private String vehicleDetails;
-    private String manufacturerName;
-    private String vehicleDriverName;
-    private String insuranceProviderName;
-    private int noOfSeats;
-    private FuelTypes fuelType;
-    private HashMap<String,Float> baseRatePerDay=new HashMap<String, Float>();
-    private HashMap<String,Float> ratePerKilometer=new HashMap<String, Float>();
+    protected int vechicleId;
+    protected String vehicleDetails;
+    protected String manufacturerName;
+    protected boolean vehicleIsSelfDrive;
+    protected String vehicleDriverName;
+    protected boolean vehicleIsInsured;
+    protected String insuranceProviderName;
+    protected int noOfSeats;
+    protected FuelTypes fuelType;
+    protected HashMap<String,Float> baseRatePerDay=new HashMap<String, Float>();
+    protected HashMap<String,Float> ratePerKilometer=new HashMap<String, Float>();
 
     public Vehicles(int vechicleId, String vehicleDetails, String manufacturerName, String insuranceProviderName, int noOfSeats, FuelTypes fuelTypes)
     {
@@ -55,12 +57,29 @@ public abstract class Vehicles implements IDisplay
         this.manufacturerName = manufacturerName;
     }
 
+    public boolean isVehicleIsSelfDrive() {
+        return vehicleIsSelfDrive;
+    }
+
+    public void setVehicleIsSelfDrive(boolean vehicleIsSelfDrive) {
+        this.vehicleIsSelfDrive = vehicleIsSelfDrive;
+    }
+
     public String getVehicleDriverName() {
         return vehicleDriverName;
     }
 
     public void setVehicleDriverName(String vehicleDriverName) {
         this.vehicleDriverName = vehicleDriverName;
+    }
+
+
+    public boolean isVehicleIsInsured() {
+        return vehicleIsInsured;
+    }
+
+    public void setVehicleIsInsured(boolean vehicleIsInsured) {
+        this.vehicleIsInsured = vehicleIsInsured;
     }
 
     public String getInsuranceProviderName() {
@@ -98,7 +117,6 @@ public abstract class Vehicles implements IDisplay
     public HashMap<String, Float> getRatePerKilometer() {
         return ratePerKilometer;
     }
-
     public void setRatePerKilometer(HashMap<String, Float> ratePerKilometer) {
         this.ratePerKilometer = ratePerKilometer;
     }
