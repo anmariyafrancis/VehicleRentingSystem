@@ -11,7 +11,7 @@ public class Group8Main
         v1.insertOwnerDetails();
         v1.insertBusDetails();
         v1.insertCarDetails();
-
+        v1.insertMotorCycleDetails();
     }
     public void insertOwnerDetails()
     {
@@ -57,6 +57,9 @@ public class Group8Main
         Car c3=new Car("WAUUL98EX8A747315",	"Reverse-engineered motivating moderator","Buick","FALSE","Robb Seton","TRUE","Intact Insurance",6,FuelTypes.Diesel,100f,5f,"Park Avenue","Pink" );
         Car c4=new Car("ZHWGU5BZ0CL457896","Multi-lateral content-based customer loyalty","Ford","TRUE",	null,"False",null,8,FuelTypes.Petrol,100f,5f,"Aerostar","Mauv" );
         Car c5=new Car("WAU4FAFL0AA424617","Persistent fault-tolerant focus group","Suzuki","TRUE",null,"FALSE",null,7,FuelTypes.Petrol,100f, 5f,"Esteem","Crimson" );
+    }
+    public void insertMotorCycleDetails()
+    {
 
     }
 }
