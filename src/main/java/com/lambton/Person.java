@@ -4,9 +4,9 @@ import java.time.LocalDate;
 
 enum Gender
 {
-    MALE,
-    FEMALE,
-    OTHERS
+    Male,
+    Female,
+    Others
 }
 
 public abstract class Person implements IDisplay
@@ -16,20 +16,18 @@ public abstract class Person implements IDisplay
     private String lastName;
     private Gender gender;
     private LocalDate birthDate;
-    private int age;
-    private int mobileNumber;
+    private String mobileNumber;
     private String emailId;
     private String userName;
     private String passWord;
 
-    public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int age, int mobileNumber, String emailId, String userName, String passWord)
+    public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailId, String userName, String passWord)
     {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
         this.birthDate = birthDate;
-        this.age = age;
         this.mobileNumber = mobileNumber;
         this.emailId = emailId;
         this.userName = userName;
@@ -76,11 +74,11 @@ public abstract class Person implements IDisplay
         this.birthDate = birthDate;
     }
 
-    public int getMobileNumber() {
+    public String getMobileNumber() {
         return mobileNumber;
     }
 
-    public void setMobileNumber(int mobileNumber) {
+    public void setMobileNumber(String mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 
@@ -126,7 +124,7 @@ public abstract class Person implements IDisplay
     private int getAge()
     {
         LocalDate today = LocalDate.now();
-        age = today.getYear()-birthDate.getYear();
+        int age = today.getYear()-birthDate.getYear();
         return age;
     }
 }

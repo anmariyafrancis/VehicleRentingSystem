@@ -7,13 +7,13 @@ import java.util.List;
 public class Owner extends Person
 {
     private String companyTitle;
-    private int businessLandLineNumber;
+    private String businessLandLineNumber;
     private String website;
     private List<String> list=new ArrayList<String>();
 
-    public Owner(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, int age, int mobileNumber, String emailId, String userName, String passWord, String companyTitle, int businessLandLineNumber, String website, String vehicleListOwned)
+    public Owner(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailId, String userName, String passWord, String companyTitle, String businessLandLineNumber, String website, String vehicleListOwned)
     {
-        super(id, firstName, lastName, gender, birthDate, age, mobileNumber, emailId, userName, passWord);
+        super(id, firstName, lastName, gender, birthDate, mobileNumber, emailId, userName, passWord);
         this.companyTitle = companyTitle;
         this.businessLandLineNumber = businessLandLineNumber;
         this.website = website;
@@ -28,11 +28,11 @@ public class Owner extends Person
         this.companyTitle = companyTitle;
     }
 
-    public int getBusinessLandLineNumber() {
+    public String getBusinessLandLineNumber() {
         return businessLandLineNumber;
     }
 
-    public void setBusinessLandLineNumber(int businessLandLineNumber) {
+    public void setBusinessLandLineNumber(String businessLandLineNumber) {
         this.businessLandLineNumber = businessLandLineNumber;
     }
 
