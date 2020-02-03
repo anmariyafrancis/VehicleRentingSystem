@@ -37,8 +37,15 @@ public class Group8Main
 
     public void insertBusDetails()
     {
-        Bus b1= new Bus("1N6AD0CU5BC296395", "Customer-focused bifurcated groupware", "Ford", "False", null, "Yes",
-            "Pepillo Kitman", 9, FuelTypes.Petrol, 250f, 10f, "MiniBus",BusAccessibility.Yes,WifiAccessibility.No);
+        Bus b1= new Bus("1N6AD0CU5BC296395", "Customer-focused bifurcated groupware", "Ford", "False", "Pepillo Kitman", "Yes",null
+            , 9, FuelTypes.Petrol, 250f, 7f, "ScoolBus",BusAccessibility.Yes,WifiAccessibility.No);
+
+        Bus b2= new Bus("1GD01XEG5FZ726187", "Focused actuating help-desk", "Benz", "Yes", "Pepillo Kitman", "Yes",
+                null, 26,FuelTypes.Diesel, 250f, 7f, "Coach",BusAccessibility.Yes,WifiAccessibility.Yes);
+        Bus b3= new Bus("3N1CN7AP4DL356756","	Enhanced tertiary Graphical User Interface","	Ford",	"TRUE",null,"TRUE","Intact Insurance",	30,FuelTypes.Diesel,250,	7f,	"Double Decker",BusAccessibility.No,WifiAccessibility.Yes
+        );
+        Bus b4= new Bus();
+        Bus b1= new Bus
 
     }
 }
