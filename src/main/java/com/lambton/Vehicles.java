@@ -11,33 +11,38 @@ enum FuelTypes
 
 public abstract class Vehicles implements IDisplay
 {
-    protected int vechicleId;
+    protected String vechicleId;
     protected String vehicleDetails;
     protected String manufacturerName;
-    protected boolean vehicleIsSelfDrive;
+    protected String vehicleIsSelfDrive;
     protected String vehicleDriverName;
-    protected boolean vehicleIsInsured;
+    protected String vehicleIsInsured;
     protected String insuranceProviderName;
     protected int noOfSeats;
     protected FuelTypes fuelType;
-    protected HashMap<String,Float> baseRatePerDay=new HashMap<String, Float>();
-    protected HashMap<String,Float> ratePerKilometer=new HashMap<String, Float>();
+    protected float baseRatePerDay;
+    protected float ratePerKilometer;
 
-    public Vehicles(int vechicleId, String vehicleDetails, String manufacturerName, String insuranceProviderName, int noOfSeats, FuelTypes fuelTypes)
+    public Vehicles(String vechicleId, String vehicleDetails, String manufacturerName, String vehicleIsSelfDrive, String vehicleDriverName, String vehicleIsInsured, String insuranceProviderName, int noOfSeats, FuelTypes fuelType, Float baseRatePerDay, Float ratePerKilometer)
     {
         this.vechicleId = vechicleId;
         this.vehicleDetails = vehicleDetails;
         this.manufacturerName = manufacturerName;
+        this.vehicleIsSelfDrive = vehicleIsSelfDrive;
+        this.vehicleDriverName = vehicleDriverName;
+        this.vehicleIsInsured = vehicleIsInsured;
         this.insuranceProviderName = insuranceProviderName;
         this.noOfSeats = noOfSeats;
         this.fuelType = fuelType;
+        this.baseRatePerDay = baseRatePerDay;
+        this.ratePerKilometer = ratePerKilometer;
     }
 
-    public int getVechicleId() {
+    public String getVechicleId() {
         return vechicleId;
     }
 
-    public void setVechicleId(int vechicleId) {
+    public void setVechicleId(String vechicleId) {
         this.vechicleId = vechicleId;
     }
 
@@ -57,11 +62,10 @@ public abstract class Vehicles implements IDisplay
         this.manufacturerName = manufacturerName;
     }
 
-    public boolean isVehicleIsSelfDrive() {
+    public String getVehicleIsSelfDrive() {
         return vehicleIsSelfDrive;
     }
-
-    public void setVehicleIsSelfDrive(boolean vehicleIsSelfDrive) {
+    public void setVehicleIsSelfDrive(String vehicleIsSelfDrive) {
         this.vehicleIsSelfDrive = vehicleIsSelfDrive;
     }
 
@@ -73,12 +77,11 @@ public abstract class Vehicles implements IDisplay
         this.vehicleDriverName = vehicleDriverName;
     }
 
-
-    public boolean isVehicleIsInsured() {
+    public String getVehicleIsInsured() {
         return vehicleIsInsured;
     }
 
-    public void setVehicleIsInsured(boolean vehicleIsInsured) {
+    public void setVehicleIsInsured(String vehicleIsInsured) {
         this.vehicleIsInsured = vehicleIsInsured;
     }
 
@@ -106,19 +109,21 @@ public abstract class Vehicles implements IDisplay
         this.fuelType = fuelType;
     }
 
-    public HashMap<String, Float> getBaseRatePerDay() {
+    public float getBaseRatePerDay() {
         return baseRatePerDay;
     }
 
-    public void setBaseRatePerDay(HashMap<String, Float> baseRatePerDay) {
+    public void setBaseRatePerDay(float baseRatePerDay) {
         this.baseRatePerDay = baseRatePerDay;
     }
 
-    public HashMap<String, Float> getRatePerKilometer() {
+    public float getRatePerKilometer() {
         return ratePerKilometer;
     }
-    public void setRatePerKilometer(HashMap<String, Float> ratePerKilometer) {
+
+    public void setRatePerKilometer(float ratePerKilometer) {
         this.ratePerKilometer = ratePerKilometer;
     }
+}
 
 }

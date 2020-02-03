@@ -1,6 +1,7 @@
 package com.lambton;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 enum BusAccessibility
 {
@@ -19,9 +20,9 @@ public class Bus extends Vehicles
     private BusAccessibility isBusAccess;
     private WifiAccessibility isWifiAccess;
 
-    public Bus(int vechicleId, String vehicleDetails, String manufacturerName, String insuranceProviderName, int noOfSeats, FuelTypes fuelTypes, ArrayList<String> busType, BusAccessibility isBusAccess, WifiAccessibility isWifiAccess)
+    public Bus(String vechicleId, String vehicleDetails, String manufacturerName, String vehicleIsSelfDrive, String vehicleDriverName, String vehicleIsInsured, String insuranceProviderName, int noOfSeats, FuelTypes fuelType, HashMap<String, Float> baseRatePerDay, HashMap<String, Float> ratePerKilometer, ArrayList<String> busType, BusAccessibility isBusAccess, WifiAccessibility isWifiAccess)
     {
-        super(vechicleId, vehicleDetails, manufacturerName, insuranceProviderName, noOfSeats, fuelTypes);
+        super(vechicleId, vehicleDetails, manufacturerName, vehicleIsSelfDrive, vehicleDriverName, vehicleIsInsured, insuranceProviderName, noOfSeats, fuelType, baseRatePerDay, ratePerKilometer);
         this.busType = busType;
         this.isBusAccess = isBusAccess;
         this.isWifiAccess = isWifiAccess;

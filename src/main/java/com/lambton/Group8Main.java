@@ -8,6 +8,8 @@ public class Group8Main
     {
         Group8Main v1=new Group8Main();
         v1.insertOwnerDetails();
+        v1.insertBusDetails();
+
     }
     public void insertOwnerDetails()
     {
@@ -31,5 +33,11 @@ public class Group8Main
                 "kspensly3@oaic.gov.au", "kspensly3", "5FWUMy", "Twitterbeat", "(912) 5937336", "macromedia.com", null);
 
         Owner owner5 = new Owner(5,"Eveline","Lumox",Gender.Female,owner5BirthDate,"(721) 7650492","elumox4@weather.com","elumox4","fwNXQKCkTVW","Leenti","(654) 4720600","europa.eu",null);
+    }
+
+    public void insertBusDetails()
+    {
+        Bus b1=Bus b1 = new Bus("1N6AD0CU5BC296395", "Customer-focused bifurcated groupware", "Ford", "False", false, "Yes",
+            "Pepillo Kitman", 9, FuelTypes.Petrol, 300, 10D, "MiniBus", false, true);
     }
 }
