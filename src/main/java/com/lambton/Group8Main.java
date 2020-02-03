@@ -64,6 +64,6 @@ public class Group8Main
         MotorCycle m2=new MotorCycle("WBAVB13506K975623",	"Multi-lateral needs-based superstructure",	"Ducati","TRUE",null,"TRUE","Aviva",1,FuelTypes.Diesel, 50f	,1f,	59,	36);
         MotorCycle m3=new MotorCycle("JH4DB76611S323929",	"Multi-tiered context-sensitive projection","BMW","FALSE","Krystle Wilbore","FALSE",null,2,FuelTypes.Diesel,50f,1f,165,	23);
         MotorCycle m4=new MotorCycle("5N1AR2MM1FC633287","Secured local encryption","Aprillia","TRUE",null,"TRUE","Intact Insurance",1,FuelTypes.Petrol, 50f,1f, 157,32);
-        MotorCycle m5=new MotorCycle("3C6LD4AT1CG631333","Seamless national benchmark","Honda","FALSE","Pepillo  Kitman","TRUE","Aviva",1,FuelTypes.Petrol ,50f,1f, 183,50);
+        MotorCycle m5=new MotorCycle("3C6LD4AT1CG631333","Seamless national benchmark","Honda","FALSE","Pepillo  Kitman","TRUE","Aviva",1,FuelTypes.Petrol ,50f,1f, 183,51);
     }
 }
