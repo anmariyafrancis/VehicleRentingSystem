@@ -1,7 +1,5 @@
 package com.lambton;
 
-import java.util.HashMap;
-
 enum FuelTypes
 {
     Petrol,
@@ -126,4 +124,3 @@ public abstract class Vehicles implements IDisplay
     }
 }
 
-}

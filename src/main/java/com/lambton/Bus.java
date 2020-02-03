@@ -16,11 +16,11 @@ enum WifiAccessibility
 
 public class Bus extends Vehicles
 {
-    private ArrayList<String> busType=new ArrayList<String>();
+    private String busType;
     private BusAccessibility isBusAccess;
     private WifiAccessibility isWifiAccess;
 
-    public Bus(String vechicleId, String vehicleDetails, String manufacturerName, String vehicleIsSelfDrive, String vehicleDriverName, String vehicleIsInsured, String insuranceProviderName, int noOfSeats, FuelTypes fuelType, HashMap<String, Float> baseRatePerDay, HashMap<String, Float> ratePerKilometer, ArrayList<String> busType, BusAccessibility isBusAccess, WifiAccessibility isWifiAccess)
+    public Bus(String vechicleId, String vehicleDetails, String manufacturerName, String vehicleIsSelfDrive, String vehicleDriverName, String vehicleIsInsured, String insuranceProviderName, int noOfSeats, FuelTypes fuelType, Float baseRatePerDay, Float ratePerKilometer, String busType, BusAccessibility isBusAccess, WifiAccessibility isWifiAccess)
     {
         super(vechicleId, vehicleDetails, manufacturerName, vehicleIsSelfDrive, vehicleDriverName, vehicleIsInsured, insuranceProviderName, noOfSeats, fuelType, baseRatePerDay, ratePerKilometer);
         this.busType = busType;
@@ -28,11 +28,11 @@ public class Bus extends Vehicles
         this.isWifiAccess = isWifiAccess;
     }
 
-    public ArrayList<String> getBusType() {
+    public String getBusType() {
         return busType;
     }
 
-    public void setBusType(ArrayList<String> busType) {
+    public void setBusType(String busType) {
         this.busType = busType;
     }
 
