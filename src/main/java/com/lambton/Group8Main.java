@@ -53,7 +53,7 @@ public class Group8Main
     public void insertCarDetails()
     {
         Car c1=new Car("WBA3A5C55CF202202","Visionary optimal neural-net","Scion","False","Pepillo  Kitman","FALSE",	null,6,FuelTypes.Petrol,100f,5f, "tC","Yellow");
-        Car c2=new Car();
+        Car c2=new Car("5N1CR2MNXEC181212","Networked background initiative","Ford","TRUE",null,"TRUE","Aviva",8,FuelTypes.Diesel, 100f,5f, "Econoline E150","Violet" );
         Car c3=new Car();
         Car c4=new Car();
         Car c5=new Car();
