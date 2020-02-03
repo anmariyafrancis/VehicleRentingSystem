@@ -31,4 +31,21 @@ public class Car extends Vehicles
     {
         this.carColor = carColor;
     }
+
+    public void display()
+    {
+        System.out.println("Car Identification Number : " + getVechicleId());
+        System.out.println("Car Details : "+getVehicleDetails());
+        System.out.println("Car Manufacturer's name : "+getManufacturerName());
+        System.out.println("is car self driving ? : "+isVehicleIsSelfDrive());
+        System.out.println("Car Driver Name : "+getVehicleDriverName());
+        System.out.println("Is car insured ? : "+isVehicleIsInsured());
+        System.out.println("Car Insurance Provider's Name : "+getInsuranceProviderName());
+        System.out.println("Car no. of seats : "+getNoOfSeats());
+        System.out.println("Car Fuel Type : "+getFuelType());
+        System.out.println("Car Base Rate Per Day : "+getBaseRatePerDay());
+        System.out.println("Car Rate per Hour : "+getRatePerKilometer());
+        System.out.println("Car Type : "+getCarType());
+        System.out.println("Car color : "+getCarColor());
+    }
 }
