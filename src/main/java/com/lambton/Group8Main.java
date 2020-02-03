@@ -62,8 +62,10 @@ public class Group8Main
     {
         MotorCycle m1=new MotorCycle("WBA3B9C51DJ591682","Right-sized 24/7 projection","Harley Davidson","True","Pepillo  Kitman","Yes",null,2,FuelTypes.Petrol,50f,1f,71,	41);
         MotorCycle m2=new MotorCycle("WBAVB13506K975623",	"Multi-lateral needs-based superstructure",	"Ducati","TRUE",null,"TRUE","Aviva",1,FuelTypes.Diesel, 50f	,1f,	59,	36);
-        MotorCycle m1=new MotorCycle();
-        MotorCycle m1=new MotorCycle();
-        MotorCycle m1=new MotorCycle();
+        MotorCycle m3=new MotorCycle("JH4DB76611S323929",	"Multi-tiered context-sensitive projection","BMW","FALSE","Krystle Wilbore","FALSE",null,2,FuelTypes.Diesel,50f,1f,165,	23);
+        MotorCycle m4=new MotorCycle(5N1AR2MM1FC633287	Secured local encryption	Aprillia	TRUE		TRUE	Intact Insurance	1	Petrol	$ 50	$ 1	57	32
+        );
+        MotorCycle m5=new MotorCycle(3C6LD4AT1CG631333	Seamless national benchmark	Honda	FALSE	Pepillo  Kitman	TRUE	Aviva	2	Petrol	$ 50	$ 1	83	50
+        );
     }
 }
