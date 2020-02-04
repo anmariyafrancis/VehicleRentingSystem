@@ -70,4 +70,6 @@ public class VehicleRent implements IDisplay
         System.out.println("Total Bill To Pay" + getTotalBillToPay());
     }
 
+    
+
 }

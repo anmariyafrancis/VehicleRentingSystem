@@ -122,5 +122,11 @@ public abstract class Vehicles implements IDisplay
     public void setRatePerKilometer(float ratePerKilometer) {
         this.ratePerKilometer = ratePerKilometer;
     }
+
+    public void billToPay()
+    {
+        float bill = (baseRatePerDay + (ratePerKilometer*ratePerKilometer));
+    }
+
 }
 
