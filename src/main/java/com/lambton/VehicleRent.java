@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class VehicleRent implements IDisplay
 {
     private LocalDate rentStartDate;
-    private LocalDate rentEndDate;
+    private LocalDate rent_End_Date;
     private float rentInNoOfDays;
     private double totalKilometerDrived;
     private float totalBillToPay;
@@ -13,7 +13,7 @@ public class VehicleRent implements IDisplay
     public VehicleRent(LocalDate rentStartDate, LocalDate rentEndDate, float rentInNoOfDays, double totalKilometerDrived, float totalBillToPay)
     {
         this.rentStartDate = rentStartDate;
-        this.rentEndDate = rentEndDate;
+        this.rent_End_Date = rentEndDate;
         this.rentInNoOfDays = rentInNoOfDays;
         this.totalKilometerDrived = totalKilometerDrived;
         this.totalBillToPay = totalBillToPay;
@@ -28,11 +28,11 @@ public class VehicleRent implements IDisplay
     }
 
     public LocalDate getRentEndDate() {
-        return rentEndDate;
+        return rent_End_Date;
     }
 
     public void setRentEndDate(LocalDate rentEndDate) {
-        this.rentEndDate = rentEndDate;
+        this.rent_End_Date = rentEndDate;
     }
 
     public float getRentInNoOfDays() {
