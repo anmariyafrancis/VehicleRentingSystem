@@ -48,6 +48,7 @@ public class VehicleRent implements IDisplay
     }
 
     public void setTotalKilometerDrived(double totalKilometerDrived) {
+
         this.totalKilometerDrived = totalKilometerDrived;
     }
 
